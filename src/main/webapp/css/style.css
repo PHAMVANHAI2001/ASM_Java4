@@ -1,0 +1,294 @@
+.clear {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  background-color: #181818;
+  box-sizing: border-box;
+}
+
+.fad.fa-play:after {
+  content: "";
+}
+
+.tm-catalog-item-list {
+  justify-content: space-between;
+}
+
+.tm-catalog-item {
+  max-width: 462px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 1419px) {
+  .tm-catalog-item {
+    margin-bottom: 30px;
+  }
+}
+
+.tm-thumbnail-container {
+  overflow: hidden;
+}
+
+.tm-thumbnail-container img {
+  transition: all 0.3s ease;
+}
+
+.tm-thumbnail-container:hover img {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.tm-img-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tm-img-overlay:hover {
+  background-color: transparent;
+}
+
+.tm-img-overlay:hover .tm-overlay-icon {
+  opacity: 0;
+}
+
+.tm-overlay-icon {
+  color: #a7a7a7;
+  opacity: 1;
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 8px;
+  z-index: 1002;
+  transition: all 0.3s ease;
+}
+
+.tm-bg-gray {
+  background-color: #F4F4F4;
+}
+
+.tm-text-primary {
+  color: #3399CC;
+}
+
+.tm-text-secondary {
+  color: #3CAFAF;
+}
+
+.tm-catalog-item-description {
+  flex: 1;
+}
+
+header ul.nav li a.nav-link:hover{
+  color:white;
+}
+
+main aside .nav-link:hover {
+  background-color: #525252 !important
+}
+
+.nav-link .fa {
+  transition: all 1s;
+}
+
+.nav-link:hover .fa {
+  transform: rotate(360deg);
+}
+
+.nav-link .fab {
+  transition: all 1s;
+}
+
+.nav-link:hover .fab {
+  transform: rotate(360deg);
+}
+
+.nav-link .fal {
+  transition: all 1s;
+
+}
+
+.nav-link:hover .fal {
+  transform: rotate(360deg);
+}
+
+/* ---------------------------------------------CSS OF FOOTER ----------------------------------------------*/
+
+.card {
+  padding: 2% 7%;
+  color: #646771;
+  background-color: #16151a
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+ul>li {
+  padding: 4px
+}
+
+ul>li:hover {
+  color: #957bda;
+  cursor: pointer
+}
+
+hr {
+  border-width: 3px
+}
+
+.social>i {
+  padding: 1%;
+  font-size: 15px
+}
+
+.social>i:hover {
+  color: #957bda;
+  cursor: pointer
+}
+
+.policy>div {
+  padding: 4px
+}
+
+.heading {
+  font-family: 'Titillium Web', sans-serif;
+  color: white
+}
+
+.divider {
+  border-top: 2px solid rgba(189, 196, 203, 0.5);
+}
+
+/* CSS of Acticle */
+article {
+  width: 100%;
+}
+
+article .main-video {
+  width: 100%;
+}
+
+article .main-video .video {
+  width: 100%;
+}
+
+article .main-video .video iframe {
+  width: 100%;
+  height: 500px;
+}
+
+article .main-video .video h3.title {
+  color: red;
+}
+
+article .main-video .video .like-share .like-share-item{
+	
+}
+
+article .main-video .video .like-share .like-share-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+article .main-video .video .like-share .like-share-item a:hover {
+  color: red;
+}
+
+/* CSS of Aside  */
+aside .most-view {
+  width: 100%;
+}
+
+aside .block .caption {
+  background-color: #ffca2c;
+  border: 2px solid #bbbbbb;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  padding: 6px;
+  color: black;
+  font-size: 22px;
+  line-height: 31.4286px;
+}
+
+aside .block ul.list-video li.video-item {
+  width: 100%;
+}
+
+aside .block ul.list-video li.video-item a .row .thumbnail {
+  width: 200px;
+}
+
+aside .block ul.list-video li.video-item a .row .thumbnail img{
+  width: 100%;
+  height: 100%;
+}
+
+aside .block ul.list-video li.video-item a{
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color:white;
+}
+
+aside .block ul.list-video li.video-item a:hover{
+  background-color: rgb(38, 0, 255,0.9);
+}
+
+/* CSS of Login */
+.container-login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.alert {
+  display: none;
+}
+
+.container-login .login-form {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 0 15px white;
+}
+
+.container-login .login-form .fogot-password a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-login .login-form form label {
+  color: white;
+}
+
+.container-login .login-form form input {
+  background-color: #333333;
+  color: white;
+  border: none;
+}
+
